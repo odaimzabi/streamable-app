@@ -1,0 +1,3 @@
+mutation addUser($user:UserInput!,$id:Float!){
+    AddUser(user:$user,id:$id)
+}

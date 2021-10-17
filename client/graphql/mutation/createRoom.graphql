@@ -1,0 +1,7 @@
+
+
+mutation createRoom($user:UserInput!,$title:String!,$youtubeLink:String!,$shareLink:String){
+    CreateRoom(user:$user,title:$title,youtubeLink:$youtubeLink,shareLink:$shareLink){
+        id
+    }
+}

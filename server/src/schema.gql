@@ -1,0 +1,41 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type RoomEntity {
+  id: ID!
+  creatorId: Float!
+  title: String!
+  youtubeLink: String!
+  shareLink: String!
+  users: [User!]
+}
+
+type User {
+  id: ID!
+  username: String!
+  password: String!
+}
+
+type Query {
+  Me: User
+  FindUsers: [User!]
+  FindRoom(id: Float!): RoomEntity
+}
+
+type Mutation {
+  Register(password: String!, username: String!): User!
+  Logout: Boolean!
+  Login(password: String!, username: String!): User
+  deleteAllUsers: Boolean!
+  CreateRoom(shareLink: String, youtubeLink: String!, title: String!, user: UserInput!): RoomEntity!
+  AddUser(id: Float!, user: UserInput!): Boolean!
+  removeUser(id: Float!, user: UserInput!): Boolean!
+  deleteRooms: Boolean!
+  DeleteRoom(id: Float!): Boolean!
+}
+
+input UserInput {
+  id: Float!
+  username: String!
+}

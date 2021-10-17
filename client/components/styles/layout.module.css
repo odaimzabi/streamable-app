@@ -1,0 +1,41 @@
+
+
+.container nav{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color:#121212;
+}
+
+.container nav span{
+    color:white;
+    margin-left:5rem;
+    font-weight:bold;
+    font-size:medium;
+}
+
+.container nav ul{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:relative;
+}
+.container nav ul li{
+ 
+    color:white;
+    list-style: none;
+}
+
+.container nav ul li a {
+    padding:0 10px;
+}
+
+.container nav ul li button {
+    margin-bottom:0.3rem;
+    padding:0 10px;
+}

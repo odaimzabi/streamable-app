@@ -1,0 +1,7 @@
+query findRoom($id:Float!){
+    FindRoom(id:$id){
+        id
+        title
+        youtubeLink
+    }
+}

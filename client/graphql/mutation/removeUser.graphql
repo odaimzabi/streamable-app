@@ -1,0 +1,3 @@
+mutation removeUser($user:UserInput!,$id:Float!){
+    removeUser(user:$user,id:$id)
+}
